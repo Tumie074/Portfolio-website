@@ -103,7 +103,6 @@ body {
     margin: 0 auto;
     padding: 0 15px;
 }
-/* Add this with the other typography styles */
 .passion-text {
     color: var(--accent);
     font-size: 1.1rem;
@@ -480,6 +479,9 @@ h4 {
     color: var(--primary);
     margin-bottom: 0.5rem;
 }
+.fa-node-js { color: #68a063; }
+.fa-react { color: #61dafb; }
+.fa-cloud { color: #ff9900; }
 
 .skill h4 {
     font-size: 1rem;
