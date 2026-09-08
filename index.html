@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap">
+    <meta name="description" content="Itumeleng Ntela — IT graduate specialising in full-stack development, cloud computing, AI, and cyber security.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <title>Itumeleng Ntela | Professional Portfolio</title>
+    <title>Itumeleng Ntela | Portfolio</title>
 </head>
 <body>
     <div class="container">
@@ -15,6 +17,9 @@
         <nav class="main-nav">
             <div class="nav-container">
                 <span class="logo">Itumeleng Ntela</span>
+                <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+                    <span></span><span></span><span></span>
+                </button>
                 <div class="nav-links">
                     <a href="#home" class="nav-link active">Home</a>
                     <a href="#about" class="nav-link">About</a>
@@ -29,15 +34,25 @@
         <section id="home" class="section active">
             <div class="hero-content">
                 <img src="assets/profile.jpg" alt="Itumeleng Ntela" class="profile-img">
-                <h1>Tumie</h1>
-                <p class="tagline">IT Student | Aspiring Software Developer</p>
-                <p class="passion-text">Passionate About Problem Solving & Innovation</p>
+                <p class="eyebrow">Portfolio</p>
+                <h1>Itumeleng Ntela</h1>
+                <p class="tagline">IT Graduate &amp; Aspiring Software Engineer</p>
+                <p class="passion-text">Building full-stack, cloud, and AI-driven solutions to real-world problems</p>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="assets/Ntela-CV.pdf" download class="btn btn-outline">
+                        <i class="fas fa-file-pdf"></i> Download CV
+                    </a>
+                </div>
                 <div class="social-icons">
-                    <a href="https://www.linkedin.com/in/itumeleng-ntela-200b8429b/" target="_blank" rel="noopener">
+                    <a href="https://www.linkedin.com/in/itumeleng-ntela-200b8429b/" target="_blank" rel="noopener" aria-label="LinkedIn">
                         <i class="fab fa-linkedin"></i>
                     </a>
-                    <a href="https://github.com/Tumie074" target="_blank" rel="noopener">
+                    <a href="https://github.com/Tumie074" target="_blank" rel="noopener" aria-label="GitHub">
                         <i class="fab fa-github"></i>
+                    </a>
+                    <a href="mailto:tumietee074@gmail.com" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
                     </a>
                 </div>
             </div>
@@ -46,60 +61,71 @@
         <!-- About Me Section -->
         <section id="about" class="section">
             <div class="section-container">
+                <p class="eyebrow">About</p>
                 <h2>About Me</h2>
                 <div class="about-content">
                     <!-- Text section -->
                     <div class="about-text">
-                        <p>I'm a passionate and goal-driven BSc in Information Technology student currently in my final year at North-West University. I've always been curious about how technology shapes the world around us, and that curiosity continues to grow. I'm especially interested in areas like software development, problem solving, and Innovation fields where I hope to make a meaningful impact.</p>
+                        <p>I'm a passionate and goal-driven IT graduate, currently pursuing my BSc Honours in Computer Science and Information Technology at North-West University, having completed my BSc in Information Technology in 2025. I've always been curious about how technology shapes the world around us, and that curiosity continues to grow. I'm especially interested in software engineering, cloud computing, artificial intelligence, data engineering, and cyber security — fields where I hope to make a meaningful impact.</p>
 
-                        <p>As a Student Learning Assistant, I've gained valuable experience helping my peers with academic support, grading, and technical assistance. This role has helped me grow my communication, time management, and leadership skills. I've also been recognised with Golden Key Membership for ranking in the top 15% of my program.</p>
+                        <p>As a Student Learning Assistant and Peer-Assisted Learning Facilitator, I've gained valuable experience helping my peers with academic support, grading, and technical mentoring across Python, Java, and C++. This has helped me grow my communication, time management, and leadership skills. I've also been recognised with Golden Key International Honour Society membership for ranking in the top 15% of my program.</p>
 
-                        <p>I believe in using tech to solve real-world problems and create better systems for everyday life. I'm committed to lifelong learning, uplifting my community, and one day leading innovative teams in a forward-thinking tech environment.</p>
-                        
+                        <p>I believe in using tech to solve real-world problems and create better systems for everyday life. I'm currently looking for opportunities in software engineering, data analytics, cloud computing, AI, and IT risk management.</p>
+
                         <div class="education-section">
                             <h3>Education</h3>
                             <div class="education-item">
+                                <h4>BSc Honours in Computer Science and Information Technology</h4>
+                                <p>North-West University &middot; In Progress</p>
+                            </div>
+                            <div class="education-item">
                                 <h4>Bachelor of Science in Information Technology</h4>
-                                <p>North-West University | 2023 - Current (3rd Year)</p>
-                                <a href="assets/Transcript.pdf" download class="download-btn">
-                                    <i class="fas fa-file-alt"></i> Download Transcript
-                                </a>
+                                <p>North-West University &middot; 2023 – 2025 (Completed)</p>
+                                <p class="highlight">Golden Key International Honour Society — Top 15%</p>
                             </div>
                             <div class="education-item">
                                 <h4>Matric</h4>
-                                <p>Dr Molefi Oliphant Secondary | 2021</p>
-                                <a href="assets/metric.pdf" download class="download-btn">
-                                    <i class="fas fa-file-alt"></i> Download Matric Certificate
-                                </a>
+                                <p>Dr Molefi Oliphant Secondary &middot; 2021</p>
                             </div>
                         </div>
 
                         <div class="experience-section">
                             <h3>Experience</h3>
                             <div class="experience-item">
-                                <h4>Student Learning Assistant – CMPG111</h4>
-                                <p>North-West University | Feb 2025 – Jun 2025 | Contract</p>
+                                <h4>Peer-Assisted Learning Facilitator – Java (CMPG211)</h4>
+                                <p>North-West University &middot; 2025</p>
                                 <ul>
-                                    <li>Provided academic support in IT-related subjects including grading and mentoring.</li>
-                                    <li>Offered individual and group sessions adapted to different learning styles.</li>
+                                    <li>Facilitated structured weekly sessions on object-oriented programming and Java fundamentals for groups of students.</li>
+                                    <li>Developed session plans and adapted delivery based on student feedback, demonstrating communication and leadership skills.</li>
                                 </ul>
                             </div>
                             <div class="experience-item">
-                                <h4>Peer-Assisted Learning (PAL) Facilitator – MTHS113</h4>
-                                <p>North-West University | Mar 2025 – Jun 2025 | Contract</p>
+                                <h4>Student Learning Assistant – Python (CMPG111)</h4>
+                                <p>North-West University &middot; 2025</p>
                                 <ul>
-                                    <li>Led group study sessions for first-year students in Maths for IT (MTHS113).</li>
-                                    <li>Explained concepts clearly, encouraged collaboration, and built confidence.</li>
+                                    <li>Supported students with Python fundamentals, debugging techniques, and computational thinking.</li>
+                                    <li>Delivered one-on-one and group mentoring sessions to improve academic performance.</li>
                                 </ul>
                             </div>
                             <div class="experience-item">
-                                <h4>Student Learning Assistant – CMPG121</h4>
-                                <p>North-West University | Jul 2024 – Nov 2024 | Contract</p>
+                                <h4>Student Learning Assistant – C++ (CMPG121)</h4>
+                                <p>North-West University &middot; 2024</p>
                                 <ul>
-                                    <li>Guided students through C++ programming tasks and coursework.</li>
-                                    <li>Adjusted support based on student pace and understanding.</li>
+                                    <li>Assisted students with C++ syntax, memory management, and problem-solving strategies.</li>
+                                    <li>Conducted individual consultations and group workshops to reinforce lecture content.</li>
                                 </ul>
                             </div>
+                        </div>
+
+                        <div class="certifications-section">
+                            <h3>Certifications &amp; Professional Development</h3>
+                            <ul>
+                                <li><span>Vodacom Digital Skills Programme — Short Course</span><span class="year">2026</span></li>
+                                <li><span>Microsoft AI Fluency Certificate</span><span class="year">2025</span></li>
+                                <li><span>FNB App Academy — Full Stack Development</span><span class="year">2025</span></li>
+                                <li><span>Udemy — Data Analysis Bootcamp</span><span class="year">2025</span></li>
+                                <li><span>Chongqing University of Technology — Cyber Security Training</span><span class="year">2024</span></li>
+                            </ul>
                         </div>
 
                         <div class="download-container">
@@ -112,9 +138,9 @@
                     <!-- Image and hobbies section -->
                     <div class="about-image">
                         <img src="assets/about-img.jpg" alt="Tumi working" class="about-img">
-                    
+
                         <div class="hobbies-section">
-                            <h3>Hobbies & Interests</h3>
+                            <h3>Hobbies &amp; Interests</h3>
                             <div class="hobbies-icons">
                                 <div class="hobby">
                                     <i class="fas fa-utensils"></i>
@@ -134,11 +160,11 @@
                                 </div>
                                 <div class="hobby">
                                     <i class="fas fa-users"></i>
-                                    <span>Hopping with Friends</span>
+                                    <span>Time with Friends</span>
                                 </div>
                             </div>
                         </div>
-                        
+
                         <div class="references-section">
                             <h3>References</h3>
                             <ul>
@@ -154,74 +180,77 @@
         <!-- Projects Section -->
         <section id="projects" class="section">
             <div class="section-container">
+                <p class="eyebrow">Work</p>
                 <h2>My Projects</h2>
                 <div class="projects-grid">
-                    <!-- Coffee Business Website -->
+
+                    <!-- Cloud-Based Oncology Management System -->
                     <div class="project-card">
                         <div class="project-image">
-                            <img src="assets/coffee-project.jpg" alt="Coffee Business Website">
+                            <img src="assets/oncology-project.jpg" alt="Cloud-Based Oncology Management System">
                             <div class="project-links">
                                 <a href="https://github.com/Tumie074" target="_blank" class="project-link">
                                     <i class="fab fa-github"></i> Code
                                 </a>
-                                <a href="https://tumie074.github.io/Coffee-business/" target="_blank" class="project-link">
-                                    <i class="fas fa-external-link-alt"></i> Live Demo
-                                </a>
                             </div>
                         </div>
                         <div class="project-details">
-                            <h3>Coffee Business Website</h3>
-                            <p>A responsive website for a coffee business with menu and contact form.</p>
+                            <p class="project-meta">2026 &middot; Owner</p>
+                            <h3>Cloud-Based Oncology Management System</h3>
+                            <p>A cloud-hosted system that digitises patient records in an oncology setting, reducing reliance on paper-based processes. Uses Google Cloud services for storage, scalability, and security compliance, backed by requirements analysis to translate workflow inefficiencies into system specifications.</p>
                             <div class="project-tech">
-                                <span>HTML</span>
-                                <span>CSS</span>
-                                <span>JavaScript</span>
+                                <span>Google Cloud</span>
+                                <span>System Analysis &amp; Design</span>
+                                <span>Database Design</span>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Vitality Clinic Project -->
+                    <!-- Smart City Unified Threat Intelligence Platform -->
                     <div class="project-card">
                         <div class="project-image">
-                            <img src="assets/clinic-project.jpg" alt="Vitality Clinic Project">
+                            <img src="assets/threat-intelligence-project.jpg" alt="Smart City Unified Threat Intelligence Platform">
                             <div class="project-links">
-                                <a href="https://github.com/Tumie074/Group46-Demo" target="_blank" class="project-link">
+                                <a href="https://github.com/Tumie074" target="_blank" class="project-link">
                                     <i class="fab fa-github"></i> Code
                                 </a>
                             </div>
                         </div>
                         <div class="project-details">
-                            <h3>Vitality Clinic System</h3>
-                            <p>A C# application for clinic management with patient records and appointment scheduling.</p>
+                            <p class="project-meta">2026 &middot; Owner</p>
+                            <h3>Smart City Unified Threat Intelligence Platform</h3>
+                            <p>A real-time multi-stream threat detection system processing Azure Event Hub streams, with Azure Stream Analytics using event-time windowing. Enriched event data is stored in Azure Cosmos DB and visualised through Power BI dashboards tracking key security KPIs.</p>
                             <div class="project-tech">
-                                <span>C#</span>
-                                <span>.NET</span>
-                                <span>Windows Forms</span>
+                                <span>Microsoft Azure</span>
+                                <span>Power BI</span>
+                                <span>Python</span>
+                                <span>SQL</span>
+                                <span>IoT</span>
                             </div>
                         </div>
                     </div>
-                    
-                    <!-- StudentDevHub Project -->
+
+                    <!-- Smart Mancala Player - RL AI Agent -->
                     <div class="project-card">
                         <div class="project-image">
-                            <img src="assets/studentdevhub-project.jpg" alt="StudentDevHub Platform">
+                            <img src="assets/mancala-project.jpg" alt="Smart Mancala Player Reinforcement Learning Agent">
                             <div class="project-links">
-                                <a href="https://github.com/StudentDevHubOrg/StudentDevHub-Group1" target="_blank" class="project-link">
+                                <a href="https://github.com/Tumie074" target="_blank" class="project-link">
                                     <i class="fab fa-github"></i> Code
                                 </a>
-                                <a href="https://studentdevhub.netlify.app" target="_blank" class="project-link">
+                                <a href="#" target="_blank" class="project-link">
                                     <i class="fas fa-external-link-alt"></i> Live Demo
                                 </a>
                             </div>
                         </div>
                         <div class="project-details">
-                            <h3>StudentDevHub Platform</h3>
-                            <p>A full-stack platform connecting student developers with collaborative projects, featuring real-time chat, project management, and code sharing capabilities.</p>
+                            <p class="project-meta">2026 &middot; Owner</p>
+                            <h3>Smart Mancala Player – RL AI Agent</h3>
+                            <p>A Q-Learning AI agent for the traditional Southern African game Mancala, trained over 50,000 episodes of self-play with epsilon-greedy exploration and exponential decay. Features a shaped reward function to speed up convergence, brought to life in a fully playable browser interface with Human vs AI, AI vs AI, and hint modes.</p>
                             <div class="project-tech">
-                                <span>Node.js</span>
-                                <span>React</span>
-                                <span>MongoDB</span>
-                                <span>Express.js</span>
+                                <span>Python</span>
+                                <span>Q-Learning</span>
+                                <span>Reinforcement Learning</span>
                             </div>
                         </div>
                     </div>
@@ -240,13 +269,87 @@
                             </div>
                         </div>
                         <div class="project-details">
+                            <p class="project-meta">2025 &middot; Team Member</p>
                             <h3>ClearVue BI Platform</h3>
-                            <p>A NoSQL-based Business Intelligence platform with real-time data streaming, advanced analytics, and interactive dashboards for data-driven decision making.</p>
+                            <p>A real-time Business Intelligence platform processing live data streams with Apache Kafka, using MongoDB for scalable NoSQL storage and Power BI dashboards for executive-level decision making.</p>
                             <div class="project-tech">
                                 <span>MongoDB</span>
                                 <span>Apache Kafka</span>
                                 <span>Power BI</span>
-                                <span>Real-time Analytics</span>
+                                <span>Node.js</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- StudentDevHub Project -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="assets/studentdevhub-project.jpg" alt="StudentDevHub Platform">
+                            <div class="project-links">
+                                <a href="https://github.com/StudentDevHubOrg/StudentDevHub-Group1" target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i> Code
+                                </a>
+                                <a href="https://studentdevhub.netlify.app" target="_blank" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i> Live Demo
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-details">
+                            <p class="project-meta">2025 &middot; Group Leader</p>
+                            <h3>StudentDevHub Platform</h3>
+                            <p>Led an Agile team to deliver a full-stack platform connecting student developers with collaborative projects, managing sprints, code reviews, and final delivery. Features real-time chat, project management, and code sharing.</p>
+                            <div class="project-tech">
+                                <span>Node.js</span>
+                                <span>React</span>
+                                <span>MongoDB</span>
+                                <span>Express.js</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Vitality Clinic Project -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="assets/clinic-project.jpg" alt="Vitality Clinic Project">
+                            <div class="project-links">
+                                <a href="https://github.com/Tumie074/Group46-Demo" target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i> Code
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-details">
+                            <p class="project-meta">2024 &middot; Group Leader</p>
+                            <h3>Vitality Clinic System</h3>
+                            <p>Directed development of a Windows desktop application for patient records and appointment management, with structured relational database design.</p>
+                            <div class="project-tech">
+                                <span>C#</span>
+                                <span>.NET</span>
+                                <span>WinForms</span>
+                                <span>SQL Server</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Coffee Business Website -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="assets/coffee-project.jpg" alt="Coffee Business Website">
+                            <div class="project-links">
+                                <a href="https://github.com/Tumie074" target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i> Code
+                                </a>
+                                <a href="https://tumie074.github.io/Coffee-business/" target="_blank" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i> Live Demo
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-details">
+                            <h3>Coffee Business Website</h3>
+                            <p>A responsive website for a coffee business with a menu and contact form.</p>
+                            <div class="project-tech">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
                             </div>
                         </div>
                     </div>
@@ -274,7 +377,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <!-- Messaging App Project -->
                     <div class="project-card">
                         <div class="project-image">
@@ -321,73 +424,6 @@
                         </div>
                     </div>
 
-                    <!-- Cloud-Based Oncology Management System -->
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="assets/oncology-project.jpg" alt="Cloud-Based Oncology Management System">
-                            <div class="project-links">
-                                <a href="https://github.com/Tumie074" target="_blank" class="project-link">
-                                    <i class="fab fa-github"></i> Code
-                                </a>
-                            </div>
-                        </div>
-                        <div class="project-details">
-                            <h3>Cloud-Based Oncology Management System</h3>
-                            <p>A cloud-hosted system that digitises patient records in an oncology setting, reducing reliance on paper-based processes. Uses Google Cloud services for storage, scalability, and security compliance, backed by requirements analysis to translate workflow inefficiencies into system specifications.</p>
-                            <div class="project-tech">
-                                <span>Google Cloud</span>
-                                <span>System Analysis &amp; Design</span>
-                                <span>Database Design</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Smart City Unified Threat Intelligence Platform -->
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="assets/threat-intelligence-project.jpg" alt="Smart City Unified Threat Intelligence Platform">
-                            <div class="project-links">
-                                <a href="https://github.com/Tumie074" target="_blank" class="project-link">
-                                    <i class="fab fa-github"></i> Code
-                                </a>
-                            </div>
-                        </div>
-                        <div class="project-details">
-                            <h3>Smart City Unified Threat Intelligence Platform</h3>
-                            <p>A real-time multi-stream threat detection system processing Azure Event Hub streams, with Azure Stream Analytics using event-time windowing. Enriched event data is stored in Azure Cosmos DB and visualised through Power BI dashboards tracking key security KPIs.</p>
-                            <div class="project-tech">
-                                <span>Microsoft Azure</span>
-                                <span>Power BI</span>
-                                <span>Python</span>
-                                <span>SQL</span>
-                                <span>IoT</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Smart Mancala Player - RL AI Agent -->
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="assets/mancala-project.jpg" alt="Smart Mancala Player Reinforcement Learning Agent">
-                            <div class="project-links">
-                                <a href="https://github.com/Tumie074" target="_blank" class="project-link">
-                                    <i class="fab fa-github"></i> Code
-                                </a>
-                                <a href="#" target="_blank" class="project-link">
-                                    <i class="fas fa-external-link-alt"></i> Live Demo
-                                </a>
-                            </div>
-                        </div>
-                        <div class="project-details">
-                            <h3>Smart Mancala Player - RL AI Agent</h3>
-                            <p>A Q-Learning AI agent for the traditional Southern African game Mancala, trained over 50,000 episodes of self-play with epsilon-greedy exploration and exponential decay. Features a shaped reward function to speed up convergence, brought to life in a fully playable browser interface with Human vs AI, AI vs AI, and hint modes.</p>
-                            <div class="project-tech">
-                                <span>Python</span>
-                                <span>Q-Learning</span>
-                                <span>Reinforcement Learning</span>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>
@@ -395,217 +431,100 @@
         <!-- Skills Section -->
         <section id="skills" class="section">
             <div class="section-container">
+                <p class="eyebrow">Capabilities</p>
                 <h2>My Skills</h2>
                 <div class="skills-container">
                     <div class="skills-column">
                         <h3>Technical Skills</h3>
                         <div class="skills-grid">
-                            <div class="skill">
-                                <div class="skill-icon"><i class="fab fa-python"></i></div>
-                                <h4>Python</h4>
-                            </div>
-                            <div class="skill">
-                                <div class="skill-icon"><i class="fab fa-java"></i></div>
-                                <h4>Java</h4>
-                            </div>
-                            <div class="skill">
-                                <div class="skill-icon"><i class="fas fa-code"></i></div>
-                                <h4>C++</h4>
-                            </div>
-                            <div class="skill">
-                                <div class="skill-icon"><i class="fas fa-terminal"></i></div>
-                                <h4>C#</h4>
-                            </div>
-                            <div class="skill">
-                                <div class="skill-icon"><i class="fas fa-database"></i></div>
-                                <h4>SQL</h4>
-                            </div>
-                            <div class="skill">
-                                <div class="skill-icon"><i class="fas fa-code-branch"></i></div>
-                                <h4>.NET Framework</h4>
-                            </div>
-                            <div class="skill">
-                                <div class="skill-icon"><i class="fab fa-html5"></i></div>
-                                <h4>HTML</h4>
-                            </div>
-                            <div class="skill">
-                                <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
-                                <h4>CSS</h4>
-                            </div>
-                            <div class="skill">
-                                <div class="skill-icon"><i class="fab fa-js-square"></i></div>
-                                <h4>JavaScript</h4>
-                            </div>
-                            <div class="skill">
-                                <div class="skill-icon"><i class="fas fa-laptop-code"></i></div>
-                                <h4>Web Development</h4>
-                            </div>
-                            <div class="skill">
-                                <div class="skill-icon"><i class="fas fa-file-code"></i></div>
-                                <h4>Delphi</h4>
-                            </div>
-                            <div class="skill">
-                                <div class="skill-icon"><i class="fas fa-database"></i></div>
-                                <h4>Oracle</h4>
-                            </div>
-                            <div class="skill">
-                                <div class="skill-icon"><i class="fas fa-laptop"></i></div>
-                                <h4>MS Visual Studio</h4>
-                            </div>
-                            <div class="skill">
-                                <div class="skill-icon"><i class="fas fa-code"></i></div>
-                                <h4>VS Code</h4>
-                            </div>
-                            <div class="skill">
-                                <div class="skill-icon"><i class="fas fa-terminal"></i></div>
-                                <h4>PyCharm</h4>
-                            </div>
-                            <div class="skill">
-                                <div class="skill-icon"><i class="fas fa-network-wired"></i></div>
-                                <h4>Cisco Packet Tracer</h4>
-                            </div>
-                            <div class="skill">
-                                <div class="skill-icon"><i class="fab fa-node-js"></i></div>
-                                <h4>Node.js</h4>
-                            </div>
-                            <div class="skill">
-                                <div class="skill-icon"><i class="fab fa-react"></i></div>
-                                <h4>React</h4>
-                            </div>
-                            <div class="skill">
-                                <div class="skill-icon"><i class="fas fa-database"></i></div>
-                                <h4>MongoDB</h4>
-                            </div>
-                            <div class="skill">
-                                <div class="skill-icon"><i class="fas fa-server"></i></div>
-                                <h4>Express.js</h4>
-                            </div>
-                            <div class="skill">
-                                <div class="skill-icon"><i class="fas fa-broadcast-tower"></i></div>
-                                <h4>Apache Kafka</h4>
-                            </div>
-                            <div class="skill">
-                                <div class="skill-icon"><i class="fas fa-chart-line"></i></div>
-                                <h4>Power BI</h4>
-                            </div>
-                            <div class="skill">
-                                <div class="skill-icon"><i class="fas fa-chart-bar"></i></div>
-                                <h4>Tableau</h4>
-                            </div>
-                            <div class="skill">
-                                <div class="skill-icon"><i class="fas fa-cloud"></i></div>
-                                <h4>AWS/Azure</h4>
-                            </div>
-                            <div class="skill">
-                                <div class="skill-icon"><i class="fas fa-plug"></i></div>
-                                <h4>Socket.io</h4>
-                            </div>
-                            <div class="skill">
-                                <div class="skill-icon"><i class="fas fa-shield-alt"></i></div>
-                                <h4>JWT Authentication</h4>
-                            </div>
-                            <div class="skill">
-                                <div class="skill-icon"><i class="fas fa-stream"></i></div>
-                                <h4>Real-time Streaming</h4>
-                            </div>
-                            <div class="skill">
-                                <div class="skill-icon"><i class="fas fa-chart-pie"></i></div>
-                                <h4>Data Analytics</h4>
-                            </div>
+                            <div class="skill"><div class="skill-icon"><i class="fab fa-python"></i></div><h4>Python</h4></div>
+                            <div class="skill"><div class="skill-icon"><i class="fab fa-java"></i></div><h4>Java</h4></div>
+                            <div class="skill"><div class="skill-icon"><i class="fas fa-code"></i></div><h4>C++</h4></div>
+                            <div class="skill"><div class="skill-icon"><i class="fas fa-terminal"></i></div><h4>C#</h4></div>
+                            <div class="skill"><div class="skill-icon"><i class="fas fa-database"></i></div><h4>SQL</h4></div>
+                            <div class="skill"><div class="skill-icon"><i class="fas fa-code-branch"></i></div><h4>.NET Framework</h4></div>
+                            <div class="skill"><div class="skill-icon"><i class="fab fa-html5"></i></div><h4>HTML</h4></div>
+                            <div class="skill"><div class="skill-icon"><i class="fab fa-css3-alt"></i></div><h4>CSS</h4></div>
+                            <div class="skill"><div class="skill-icon"><i class="fab fa-js-square"></i></div><h4>JavaScript</h4></div>
+                            <div class="skill"><div class="skill-icon"><i class="fas fa-laptop-code"></i></div><h4>Web Development</h4></div>
+                            <div class="skill"><div class="skill-icon"><i class="fas fa-robot"></i></div><h4>Machine Learning</h4></div>
+                            <div class="skill"><div class="skill-icon"><i class="fas fa-brain"></i></div><h4>Reinforcement Learning</h4></div>
+                            <div class="skill"><div class="skill-icon"><i class="fas fa-magic"></i></div><h4>Microsoft AI Fluency</h4></div>
+                            <div class="skill"><div class="skill-icon"><i class="fas fa-file-code"></i></div><h4>Delphi</h4></div>
+                            <div class="skill"><div class="skill-icon"><i class="fas fa-database"></i></div><h4>Oracle</h4></div>
+                            <div class="skill"><div class="skill-icon"><i class="fas fa-server"></i></div><h4>SQL Server</h4></div>
+                            <div class="skill"><div class="skill-icon"><i class="fas fa-laptop"></i></div><h4>MS Visual Studio</h4></div>
+                            <div class="skill"><div class="skill-icon"><i class="fas fa-code"></i></div><h4>VS Code</h4></div>
+                            <div class="skill"><div class="skill-icon"><i class="fas fa-terminal"></i></div><h4>PyCharm</h4></div>
+                            <div class="skill"><div class="skill-icon"><i class="fab fa-git-alt"></i></div><h4>Git</h4></div>
+                            <div class="skill"><div class="skill-icon"><i class="fas fa-network-wired"></i></div><h4>Cisco Packet Tracer</h4></div>
+                            <div class="skill"><div class="skill-icon"><i class="fab fa-node-js"></i></div><h4>Node.js</h4></div>
+                            <div class="skill"><div class="skill-icon"><i class="fab fa-react"></i></div><h4>React</h4></div>
+                            <div class="skill"><div class="skill-icon"><i class="fas fa-exchange-alt"></i></div><h4>REST APIs</h4></div>
+                            <div class="skill"><div class="skill-icon"><i class="fas fa-database"></i></div><h4>MongoDB</h4></div>
+                            <div class="skill"><div class="skill-icon"><i class="fas fa-database"></i></div><h4>Azure Cosmos DB</h4></div>
+                            <div class="skill"><div class="skill-icon"><i class="fas fa-server"></i></div><h4>Express.js</h4></div>
+                            <div class="skill"><div class="skill-icon"><i class="fas fa-broadcast-tower"></i></div><h4>Apache Kafka</h4></div>
+                            <div class="skill"><div class="skill-icon"><i class="fas fa-random"></i></div><h4>ETL Pipelines</h4></div>
+                            <div class="skill"><div class="skill-icon"><i class="fas fa-drafting-compass"></i></div><h4>Data Modelling</h4></div>
+                            <div class="skill"><div class="skill-icon"><i class="fas fa-chart-line"></i></div><h4>Power BI</h4></div>
+                            <div class="skill"><div class="skill-icon"><i class="fas fa-chart-bar"></i></div><h4>Tableau</h4></div>
+                            <div class="skill"><div class="skill-icon"><i class="fas fa-cloud"></i></div><h4>AWS / Azure</h4></div>
+                            <div class="skill"><div class="skill-icon"><i class="fas fa-cloud"></i></div><h4>Google Cloud</h4></div>
+                            <div class="skill"><div class="skill-icon"><i class="fas fa-plug"></i></div><h4>Socket.io</h4></div>
+                            <div class="skill"><div class="skill-icon"><i class="fas fa-shield-alt"></i></div><h4>JWT Authentication</h4></div>
+                            <div class="skill"><div class="skill-icon"><i class="fas fa-stream"></i></div><h4>Real-time Streaming</h4></div>
+                            <div class="skill"><div class="skill-icon"><i class="fas fa-chart-pie"></i></div><h4>Data Analytics</h4></div>
                         </div>
                     </div>
                     <div class="skills-column">
                         <h3>Professional Skills</h3>
                         <div class="skills-grid">
-                            <div class="skill">
-                                <div class="skill-icon"><i class="fas fa-comments"></i></div>
-                                <h4>Communication</h4>
-                            </div>
-                            <div class="skill">
-                                <div class="skill-icon"><i class="fas fa-clock"></i></div>
-                                <h4>Time Management</h4>
-                            </div>
-                            <div class="skill">
-                                <div class="skill-icon"><i class="fas fa-users"></i></div>
-                                <h4>Teamwork</h4>
-                            </div>
-                            <div class="skill">
-                                <div class="skill-icon"><i class="fas fa-lightbulb"></i></div>
-                                <h4>Problem-Solving</h4>
-                            </div>
-                            <div class="skill">
-                                <div class="skill-icon"><i class="fas fa-hands-helping"></i></div>
-                                <h4>Student Support</h4>
-                            </div>
-                            <div class="skill">
-                                <div class="skill-icon"><i class="fas fa-balance-scale"></i></div>
-                                <h4>Ethical Decision-Making</h4>
-                            </div>
-                            <div class="skill">
-                                <div class="skill-icon"><i class="fas fa-chart-bar"></i></div>
-                                <h4>Data Analytics</h4>
-                            </div>
-                            <div class="skill">
-                                <div class="skill-icon"><i class="fas fa-sitemap"></i></div>
-                                <h4>System Analysis</h4>
-                            </div>
-                            <div class="skill">
-                                <div class="skill-icon"><i class="fas fa-brain"></i></div>
-                                <h4>Decision Support</h4>
-                            </div>
-                            <div class="skill">
-                                <div class="skill-icon"><i class="fas fa-project-diagram"></i></div>
-                                <h4>Agile & Scrum</h4>
-                            </div>
-                            <div class="skill">
-                                <div class="skill-icon"><i class="fas fa-layer-group"></i></div>
-                                <h4>UI/UX Design</h4>
-                            </div>
-                            <div class="skill">
-                                <div class="skill-icon"><i class="fas fa-chart-pie"></i></div>
-                                <h4>Statistics</h4>
-                            </div>
-                            <div class="skill">
-                                <div class="skill-icon"><i class="fas fa-lock"></i></div>
-                                <h4>Information Security</h4>
-                            </div>
-                            <div class="skill">
-                                <div class="skill-icon"><i class="fas fa-network-wired"></i></div>
-                                <h4>Computer Networks</h4>
-                            </div>
-                            <div class="skill">
-                                <div class="skill-icon"><i class="fas fa-calculator"></i></div>
-                                <h4>Discrete Mathematics</h4>
-                            </div>
-                            <div class="skill">
-                                <div class="skill-icon"><i class="fas fa-laptop-house"></i></div>
-                                <h4>Operating Systems</h4>
-                            </div>
+                            <div class="skill"><div class="skill-icon"><i class="fas fa-comments"></i></div><h4>Communication</h4></div>
+                            <div class="skill"><div class="skill-icon"><i class="fas fa-clock"></i></div><h4>Time Management</h4></div>
+                            <div class="skill"><div class="skill-icon"><i class="fas fa-users"></i></div><h4>Teamwork</h4></div>
+                            <div class="skill"><div class="skill-icon"><i class="fas fa-lightbulb"></i></div><h4>Problem-Solving</h4></div>
+                            <div class="skill"><div class="skill-icon"><i class="fas fa-hands-helping"></i></div><h4>Student Support</h4></div>
+                            <div class="skill"><div class="skill-icon"><i class="fas fa-balance-scale"></i></div><h4>Ethical Decision-Making</h4></div>
+                            <div class="skill"><div class="skill-icon"><i class="fas fa-clipboard-list"></i></div><h4>Requirements Analysis</h4></div>
+                            <div class="skill"><div class="skill-icon"><i class="fas fa-sitemap"></i></div><h4>System Analysis</h4></div>
+                            <div class="skill"><div class="skill-icon"><i class="fas fa-brain"></i></div><h4>Decision Support</h4></div>
+                            <div class="skill"><div class="skill-icon"><i class="fas fa-project-diagram"></i></div><h4>Agile &amp; Scrum</h4></div>
+                            <div class="skill"><div class="skill-icon"><i class="fas fa-infinity"></i></div><h4>CI/CD Principles</h4></div>
+                            <div class="skill"><div class="skill-icon"><i class="fas fa-layer-group"></i></div><h4>UI/UX Design</h4></div>
+                            <div class="skill"><div class="skill-icon"><i class="fas fa-chart-pie"></i></div><h4>Statistics</h4></div>
+                            <div class="skill"><div class="skill-icon"><i class="fas fa-lock"></i></div><h4>Information Security</h4></div>
+                            <div class="skill"><div class="skill-icon"><i class="fas fa-check-double"></i></div><h4>IT General Controls</h4></div>
+                            <div class="skill"><div class="skill-icon"><i class="fas fa-satellite-dish"></i></div><h4>Threat Intelligence</h4></div>
+                            <div class="skill"><div class="skill-icon"><i class="fas fa-network-wired"></i></div><h4>Computer Networks</h4></div>
+                            <div class="skill"><div class="skill-icon"><i class="fas fa-calculator"></i></div><h4>Discrete Mathematics</h4></div>
+                            <div class="skill"><div class="skill-icon"><i class="fas fa-laptop-house"></i></div><h4>Operating Systems</h4></div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        
+
         <!-- Contact Section -->
         <section id="contact" class="section">
             <div class="section-container">
+                <p class="eyebrow">Get in Touch</p>
                 <h2>Let's Connect</h2>
                 <div class="contact-container">
                     <div class="contact-info">
-                        <h3>Get in Touch</h3>
-                        <p><i class="fas fa-envelope"></i> Tumieitumeleng074@gmail.com</p>
-                        <p><i class="fas fa-phone"></i> +27 65 801 8948</p>
-                        <p><i class="fas fa-map-marker-alt"></i> Potchefstroom & Vanderbijlpark, South Africa</p>
-                        <p><i class="fab fa-linkedin"></i> linkedin.com/in/itumeleng-ntela-200b8429b/</p>
-                        <p><i class="fab fa-github"></i> github.com/Tumie074</p>
+                        <h3>Contact Details</h3>
+                        <p><a href="mailto:tumietee074@gmail.com"><i class="fas fa-envelope"></i> tumietee074@gmail.com</a></p>
+                        <p><a href="tel:+27658018948"><i class="fas fa-phone"></i> +27 65 801 8948</a></p>
+                        <p><i class="fas fa-map-marker-alt"></i> Potchefstroom &amp; Vanderbijlpark, South Africa</p>
+                        <p><a href="https://www.linkedin.com/in/itumeleng-ntela-200b8429b/" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i> linkedin.com/in/itumeleng-ntela-200b8429b</a></p>
+                        <p><a href="https://github.com/Tumie074" target="_blank" rel="noopener"><i class="fab fa-github"></i> github.com/Tumie074</a></p>
                     </div>
                 </div>
             </div>
         </section>
-        
+
         <footer>
-            <p>&copy; 2025 Itumeleng Ntela. All rights reserved.</p>
+            <p>&copy; 2026 Itumeleng Ntela. All rights reserved.</p>
         </footer>
     </div>
 
