@@ -1,46 +1,36 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Initialize with home section active
     toggleSection('home');
-    
+
+    const navLinks = document.querySelector('.nav-links');
+    const navToggle = document.querySelector('.nav-toggle');
+
     // Set up navigation
     document.querySelectorAll('.nav-link').forEach(link => {
         link.addEventListener('click', function(e) {
             e.preventDefault();
             const sectionId = this.getAttribute('href').substring(1);
             toggleSection(sectionId);
+            closeMobileNav();
         });
     });
-    
-    // Form submission handling
-    const contactForm = document.querySelector('.contact-form');
-    if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // In a real implementation, you would send the form data to a server
-            // For now, we'll just show a success message
-            alert('Thank you for your message! I will get back to you soon.');
-            this.reset();
+
+    // Mobile nav toggle
+    if (navToggle) {
+        navToggle.addEventListener('click', function() {
+            const isOpen = navLinks.classList.toggle('open');
+            this.setAttribute('aria-expanded', isOpen);
         });
     }
-    
-    // Smooth scroll for anchor links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
-            e.preventDefault();
-            
-            const targetId = this.getAttribute('href');
-            if (targetId === '#') return;
-            
-            const targetElement = document.querySelector(targetId);
-            if (targetElement) {
-                window.scrollTo({
-                    top: targetElement.offsetTop - 80,
-                    behavior: 'smooth'
-                });
-            }
-        });
-    });
+
+    function closeMobileNav() {
+        if (navLinks) {
+            navLinks.classList.remove('open');
+        }
+        if (navToggle) {
+            navToggle.setAttribute('aria-expanded', 'false');
+        }
+    }
 });
 
 // Toggle between sections
@@ -49,13 +39,13 @@ function toggleSection(sectionId) {
     document.querySelectorAll('.section').forEach(section => {
         section.classList.remove('active');
     });
-    
+
     // Show selected section
     const activeSection = document.getElementById(sectionId);
     if (activeSection) {
         activeSection.classList.add('active');
     }
-    
+
     // Update active nav link
     document.querySelectorAll('.nav-link').forEach(link => {
         link.classList.remove('active');
@@ -63,11 +53,11 @@ function toggleSection(sectionId) {
             link.classList.add('active');
         }
     });
-    
+
     // Scroll to top of the section
     if (activeSection) {
         window.scrollTo({
-            top: activeSection.offsetTop - 80,
+            top: 0,
             behavior: 'smooth'
         });
     }
